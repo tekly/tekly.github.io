@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --text_accent: #2a5297;
+  --background_accent: rgba(42, 82, 151, 0.08);
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #eee url(iisdf_icon.svg);
+  background-repeat: no-repeat;
+  background-position: right -150px bottom -150px;
+  background-size: 800px;
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--text_accent);
+  text-decoration: none;
+  border-bottom: 2px dotted var(--text_accent);
+}
+
+header.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .header-selection {
+    background-color: var(--background_accent);
+    color: var(--text_accent);
+    padding: 0 3px;
+  }
+
+  h1.header {
+    font-weight: 700;
+    margin-bottom: 0.25em;
+  }
+
+  h3.subheader {
+    font-weight: 400;
+    margin-bottom: 0.75em;
+  }
+
+  img {
+    max-width: 350px;
+    width: 100%;
+    &.logo {
+      padding: 1em;
+      margin-bottom: 3.75em;
+    }
+  }
+
+  .founded {
+    font-weight: 300;
+
+    .love-heart {
+      display: inline-block;
+      width: auto;
+      height: 0.75em;
+    }
+  }
+}
